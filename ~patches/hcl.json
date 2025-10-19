@@ -1,0 +1,42 @@
+  "HDD": [
+    {
+      "approved_by": "Aurora Systems",
+      "blacklisted_firmware": [],
+      "boot": false,
+      "capacity_gb": 1200,
+      "data": true,
+      "diagnostics_test": 1,
+      "encryption_support": false,
+      "include_in_hcl": true,
+      "interface": "SAS1200",
+      "last_edit": 1717737455,
+      "manufacturer": "Seagate",
+      "metadata": true,
+      "model": "ST1200MM0088",
+      "model_string": "Seagate Enterprise Performance 10K 1.2TB SAS HDD",
+      "recommended_firmware": "",
+      "trim_enabled": false,
+      "type": "HDD",
+      "uuid": "bdd8349e-6653-4989-a127-d78bd8098ecd"
+    },
+    {
+      "approved_by": "Aurora Systems",
+      "blacklisted_firmware": [],
+      "boot": false,
+      "capacity_gb": 1800,
+      "data": true,
+      "diagnostics_test": 1,
+      "encryption_support": false,
+      "include_in_hcl": true,
+      "interface": "SAS1200",
+      "last_edit": 1717737455,
+      "manufacturer": "HPE",
+      "metadata": true,
+      "model": "EG1800JFHMH",
+      "model_string": "HPE Enterprise 1.8TB 10K SAS HDD",
+      "recommended_firmware": "",
+      "trim_enabled": false,
+      "type": "HDD",
+      "uuid": "284d00e4-746c-4bf6-b8e6-79fa748940ea"
+    }
+  ]
