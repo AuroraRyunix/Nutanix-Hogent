@@ -52,6 +52,7 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 - do the same for CVM (10.10.0.13). Make sure to remember them, they can be the same.
 - DO THIS BEFORE PROCEEDING, MODIFYING THE PASSWORDS AFTERWARDS REQUIRE A MORE COMPLEX APPROACH AS THEY ARE LINKED IN DATABASES ELSEWHERE
 - YOU HAVE BEEN WARNED
+- 
 
 # And when you're finished?
 question yourself are you truly finished? Because i see a lot of big errors in our nutanix environement, let's fix those!
