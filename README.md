@@ -81,8 +81,21 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 ![Alt text](assets/nextactivated.png)
 
 - After this you arrive at the dasboard, yay!
+- I always got the "Cluster Service ['acropolis', 'uhura'] Restarting Frequently" warning, ignore it, it goes away, it's a side effect from the older version we use.
 
 ![Alt text](assets/dashboard.png)
+
+## LCM and updates
+"Nutanix Life Cycle Manager (LCM) is a tool that automates the process of upgrading Nutanix software and component firmware across a cluster." - whack ass AI
+
+- Head over to LCM, try to run an inventory
+- You can Update, but do not, only at the end of all tasks if you have free time. Takes about an hour.
+
+# Prism Central
+
+
+
+
 
 # And when you're finished?
 question yourself are you truly finished? Because i see a lot of big errors in our nutanix environement, let's fix those!
