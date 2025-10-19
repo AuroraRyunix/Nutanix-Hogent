@@ -150,30 +150,32 @@ After that, your console will kindly inform you that the upload might take a whi
 
 Finally, go back to the GUI, head to the Prism Central upgrade section, and miracle of miracles, you should see your shiny new upload ready to be deployed. Click through the usual prompts, ignore any strange warnings, and hope for the best.
 
-
-
 So yeah, this “hard way” isn’t exactly fun, isn’t beginner-friendly, and definitely doesn’t come with a neat button that says “Make it so.” But hey, it builds character. Or wrinkles. One of those.
 
 Good luck. You’re gonna need it.
 
+# And When You’re Finished?
 
+Ask yourself if you’re done, or just tired of looking at the problem. “But in the hidden corners where the gods’ gaze does not fall, there are those who dream of dreaming.” Keep going. Poke the thing. Fix the thing. Pretend there is a finish line if it helps you sleep.
 
+This Nutanix setup is not tragic, it is predictable. You can fix it, or you can blame the network and hope no one notices. Your move.
 
+Unsupported disks are the headline act. Yes, they are unsupported. No, that is not interesting. We will patch around it; we will call it intentional; you will nod and move on. In IT, “fake it till you make it” is not a motto, it is in the job description.
 
+Step one: use Google like a professional. Step two: if that fails, open `~patches/hcl.json`. There is a working example waiting. Consider it a parting gift, not a habit you should develop.
 
-# And when you're finished?
-Question yourself: are you truly ever finished? "Once upon a time, I alone dreamed in this world. Those who dream are the ones who never stop chasing what they believe in." Just like this, keep dreaming, exploring, and fixing. The journey never really ends. Spoiler alert: you're never done. Ever.
+# A Thank You Note (and a Reality Check)
 
-Because I see a lot of big errors in our Nutanix environment. Let's fix those, shall we? Because ignoring problems always works out great. Said no one ever.
+This is the part where paths split. You take yours, I take mine. You will be fine, or you will learn something painful and useful. Both outcomes are acceptable.
 
-The main one? Unsupported disks. Well, cause, you know, our disks aren't supported. Shocking, I know. But we know this. And we don't care. So let's properly get rid of this error. Because fake it till you make it is basically IT in a nutshell.
+Walk forward with a little arrogance and a lot of backups. Break something carefully, then fix it before anyone notices. That is how you get better, and how you keep the badge.
 
-I would personally recommend doing your own research first. Flex those Google muscles. But if you can't find it, have a look under `~patches/hcl.json`. I've given an example that works, certified by yours truly. You're welcome. No need to thank me. But you can if you want.
+And that, my friends, that is where our journeys part.
 
-# A Thank You Note, and Wishes
-And that, my friends, is where our journeys pause for a moment to reflect on what we've built and what lies ahead. Though the paths may part here, the spirit of discovery and the drive for growth remain with each of us. Move forward with confidence, ready to face new challenges and embrace fresh opportunities. Until we meet again on some distant horizon (not to be confused with VMware Horizon, which is a whole different nightmare), may your curiosity never fade and your passion never wane. 
-
-And that, my friends, is where our journeys part.
-
-Now get out there and break something. Then fix it. That's how we learn. It's also how we justify our existence.
 -Aurora R.
+
+
+
+
+
+
