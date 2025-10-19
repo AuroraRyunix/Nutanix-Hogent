@@ -92,6 +92,9 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 
 - Head over to LCM, try to run an inventory
 - You can Update, but do not, only at the end of all tasks if you have free time. Takes about an hour.
+- You'll see two version schemes, the one with a full date in them, and AHV 10.x. Have a google about how that works.
+
+![Alt text](assets/lcmupdates.png)
 
 # Deploying Prism Central
 "Prism Central provides a workspace to monitor and manage multiple clusters from a centralized environment. It runs as a separate instance that consists of either a single VM or as a three-VM scale-out architecture."
