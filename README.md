@@ -21,6 +21,27 @@ Human readable format: Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like
 - download the installer iso and VirtIO for Windows ISO, keep VirtIO for later.
 - Make sure to remember your account as we need it later.
 
+## Flashing the ISO
+- Think this would be easy? Think again. It is easy, IF you read the docs; #rtfm am i right?
+- There's currently a bug in Rufus above 3.21, so use an older rufus, or unetbooting/win32diskimager. [source](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Community-Edition-Getting-Started-v2_1:top-installing-ce-t.html)
+- Make sure to disable Secure boot, and actually use the old legacy boot this time, works better for Nutanix.
+
+# Installing Nutanix
+- Here comes the fun part, waiting... tududud
+- when the waiting is done you'll get a disk selection screen, do as i say, don't do as i do!
+- Use the smallest ssd as boot/hypervisor (H)
+- Use the bigger ssd as CVM (C)
+- Use the other hdds as data (D)
+- DO NOT CLICK NEXT (lol)
+- Double check everything, assign 2 ips that'll be accesible on vlan0 (untagged); one for the CVM and one for AHV.
+- Personally i always use 10.10.0.1/24 (yes CIDR my beloved, google that if you don't know what it is!)
+- So i set AHV to 10.10.0.12, and CVM to 10.10.0.13, PC will later be set to 10.10.0.14. (I'm afraid of the number 13)
+- STILL DO NOT CLICK NEXT. 
+- have your config double checked by the person responsible, the supervisor. Not to be confused with hypervisor. ^_^
+- Hit install, and go take a 1 hour break, yeah that's how long it takes, maybe even more.
+- After around 20-30 min you'll see "INFO Hypervisor Installation in progress". That's the CVM being deployed
+
+- Notice: But won't hdds be slow? Yes, BUT, nutanix CE uses the spare CVM space for caching, and that works wonders for what we're doing (:
 
 # And when you're finished?
 question yourself are you truly finished? Because i see a lot of big errors in our nutanix environement, let's fix those!
