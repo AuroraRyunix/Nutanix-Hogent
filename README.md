@@ -120,7 +120,7 @@ First things first, head over to the dashboard and find the “Register or Creat
 
 Next, select the latest version available. Not necessarily the first one you see—this isn’t a game of shelf organization. Google which one that is or just pick the newest-looking. If you’re feeling adventurous, you can start moonlighting as a detective.
 
-Go for the smallest deployment option unless you have more than 500 hosts waiting in line. You don’t, and if you do, I’m impressed — or sorry, depending on how well it’s working.
+Go for the smallest deployment option unless you have more than 500 hosts waiting in line. You don’t, and if you do, I’m impressed; or sorry, depending on how well it’s working.
 
 Assign that sucker a free IP address. Don’t pick the one your neighbor’s printer uses. Fill in a working NTP server — if you have an Active Directory running, use that. Time is everything, and trust me, these machines care.
 
@@ -130,7 +130,7 @@ You might need to create a new network. Fun, right? Welcome to the party. You’
 
 For the microservices configuration, leave everything at default. If it ain’t broke, don't fix it. If it breaks, well… you only have yourself to blame.
 
-And remember — if anyone asks, you have this totally under control. I’ll be here, judging quietly in the background.
+And remember; if anyone asks, you have this totally under control. I’ll be here, judging quietly in the background.
 
 # Deploying Prism Central the Hard Way
 
