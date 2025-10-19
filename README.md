@@ -25,7 +25,7 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 - There's currently a bug in Rufus above 3.21, so use an older rufus, or unetbooting/win32diskimager. [source](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Community-Edition-Getting-Started-v2_1:top-installing-ce-t.html)
 - Make sure to disable Secure boot, and actually use the old legacy boot this time, works better for Nutanix.
 
-# Installing Nutanix
+# Installing AHV
 - Here comes the fun part, waiting... tududud
 - when the waiting is done you'll get a disk selection screen, do as i say, don't do as i do!
 - Use the smallest ssd as boot/hypervisor (H)
