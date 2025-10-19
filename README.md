@@ -78,10 +78,10 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 
 ![Alt text](assets/nextcreds.png)
 
-
 ![Alt text](assets/nextactivated.png)
 
 - After this you arrive at the dasboard, yay!
+
 ![Alt text](assets/dashboard.png)
 
 # And when you're finished?
