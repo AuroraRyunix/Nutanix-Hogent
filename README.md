@@ -112,6 +112,68 @@ There are two ways to deploy. We'll try the first one, the easiest one. If that 
 
 - I've found the automated one to be a tad unreliable. Maybe Nutanix doesn't care much about CE users. Maybe server reachability is just... meh. Who knows? Nobody tells me anything.
 
+# Deploying Prism Central the Easy Way
+
+First things first, head over to the dashboard and find the “Register or Create New” button. No, it’s not a trap. Click it, then hit “Deploy.” Easy, right? Almost too easy, but hey, we take what we can get.
+
+![Alt text](prism_dashboard.png)
+
+Next, select the latest version available. Not necessarily the first one you see—this isn’t a game of shelf organization. Google which one that is or just pick the newest-looking. If you’re feeling adventurous, you can start moonlighting as a detective.
+
+Go for the smallest deployment option unless you have more than 500 hosts waiting in line. You don’t, and if you do, I’m impressed — or sorry, depending on how well it’s working.
+
+Assign that sucker a free IP address. Don’t pick the one your neighbor’s printer uses. Fill in a working NTP server — if you have an Active Directory running, use that. Time is everything, and trust me, these machines care.
+
+Give it a working DNS server, too. Yes, like real DNS, not the “sometimes works” version. Nobody's holding your hand here; figure that out yourself. Welcome to IT.
+
+You might need to create a new network. Fun, right? Welcome to the party. You’re officially on your own for this part. Good luck!
+
+For the microservices configuration, leave everything at default. If it ain’t broke, don't fix it. If it breaks, well… you only have yourself to blame.
+
+And remember — if anyone asks, you have this totally under control. I’ll be here, judging quietly in the background.
+
+# Deploying Prism Central the Hard Way
+
+Uuhm, well… it’s something with uploading a binary. Yeah. You read that right. Uploading a binary file. Like it’s 1999 all over again.
+
+First, you’ll need to grab the Prism Central installation binary and metadata files. Where, you ask? Good question. I don’t have all the answers. Go figure it out yourself. Maybe check Nutanix portals, forums, or just ask your friendly neighborhood sysadmin—if you have one.
+
+Next, you’ll upload those files to your cluster. SCP, SFTP, carrier pigeon, whatever floats your boat. Just don’t expect me to do it for you. I’ve got better things to do, like staring at logs and wondering why the moon still hasn’t exploded.
+
+Once you’ve got those files cozy on your Prism Central VM, you’ll need to run an obscure CLI command that looks like someone smashed their keyboard. Something like this:
+
+- ncli software upload software-type=PRISM_CENTRAL file-path=/home/nutanix/tmp/your-binary.tar.gz meta-file-path=/home/nutanix/tmp/your-metadata.json
+
+Remember to replace those paths with the actual file names you've got. Misspelling anything will make the universe collapse. Or at least your deployment will fail spectacularly.
+
+After that, your console will kindly inform you that the upload might take a while. That’s code for “grab a coffee, maybe a sandwich, or question your life choices.”
+
+Finally, go back to the GUI, head to the Prism Central upgrade section, and miracle of miracles, you should see your shiny new upload ready to be deployed. Click through the usual prompts, ignore any strange warnings, and hope for the best.
+
+
+
+So yeah, this “hard way” isn’t exactly fun, isn’t beginner-friendly, and definitely doesn’t come with a neat button that says “Make it so.” But hey, it builds character. Or wrinkles. One of those.
+
+Good luck. You’re gonna need it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # And when you're finished?
 Question yourself: are you truly ever finished? "Once upon a time, I alone dreamed in this world. Those who dream are the ones who never stop chasing what they believe in." Just like this, keep dreaming, exploring, and fixing. The journey never really ends. Spoiler alert: you're never done. Ever.
 
