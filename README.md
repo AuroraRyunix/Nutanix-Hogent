@@ -77,8 +77,11 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 - First time you do this, it'll ask you link your next account, this is the Nutanix account you created earlier.
 
 ![Alt text](assets/nextcreds.png)
-- After this you arrive at the dasboard, yay!
 
+
+![Alt text](assets/nextactivated.png)
+
+- After this you arrive at the dasboard, yay!
 ![Alt text](assets/dashboard.png)
 
 # And when you're finished?
