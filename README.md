@@ -85,14 +85,19 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 
 ![Alt text](assets/dashboard.png)
 
+- Something you'll notice is some critical allerts about disks not being supported, we will address this issue later, but we can safely ignore it.
+
 ## LCM and updates
 "Nutanix Life Cycle Manager (LCM) is a tool that automates the process of upgrading Nutanix software and component firmware across a cluster." - whack ass AI
 
 - Head over to LCM, try to run an inventory
 - You can Update, but do not, only at the end of all tasks if you have free time. Takes about an hour.
 
-# Prism Central
-
+# Deploying Prism Central
+"Prism Central provides a workspace to monitor and manage multiple clusters from a centralized environment. It runs as a separate instance that consists of either a single VM or as a three-VM scale-out architecture."
+So in easier words: It's a manager for multiple Nutanix Clusters, with some added tools and tricks. Any big scale will use Prism and not the in build mini version.
+There's 2 ways to deploy, we'll try the first one, the easiest one. If that doesn't work, we'll try the manual way. Do not fear, documentation is here!
+- I've found The aumated one to be a tad unreliable, maybe Nutanix doesn't care much about CE users, and server reachability is eh meh eh.
 
 
 
