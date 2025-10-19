@@ -1,29 +1,29 @@
 # Nutanix-Hogent
 Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation and overlay networking using the Network Controller.
-(Those that know me well enough know i shove some NSX overlay networking in everything)
+(Those who know me well enough know I shove some NSX overlay networking into everything.)
 
 ## Notice
-- I will use the terms AHV,CVM,and PC during this guide. The first 2 you should know, PC is just Prism Central.
+- I will use the terms AHV,CVM,and PC during this guide. You should already know the first two, but "PC" refers to Prism Central.
 
 ## What do you need?
-- courage
-- no fear
-- any dell, or hpe server with xeon e5 v3s or e5 v4s.
+- Courage.
+- No fear.
+- Any dell or Hpe server with Xeon E5-v3s or E5-v4s.
 - Nutanix CE account and iso's, more on this later.
-- one ssd bigger then 128gb (AHV)
-- one ssd bigger then 512gb (CVM+PC)
+- One ssd (<128gb), for AHV.
+- One ssd (<512gb), for CVM+PC.
 
 ## Nutanix Account
-- notice: one per team is enough.
-- head over to this [link](https://my.nutanix.com/page/signup)
-- create a new account, once confirmed by mail, head to [link](https://next.nutanix.com/discussion-forum-14/download-community-edition-38417)
-- download the installer iso and VirtIO for Windows ISO, keep VirtIO for later.
-- Make sure to remember your account as we need it later.
+- Notice: One per team is enough.
+- Head over to this: [link](https://my.nutanix.com/page/signup).
+- Create a new account. Once it is confirmed by email, head to: [link](https://next.nutanix.com/discussion-forum-14/download-community-edition-38417).
+- Download the installer ISO and the VirtIO for Windows ISO. Keep the VirtIO file for later.
+- Make sure to remember your account since you'll need it later.
 
 ## Flashing the ISO
-- Think this would be easy? Think again. It is easy, IF you read the docs; #rtfm am i right?
-- There's currently a bug in Rufus above 3.21, so use an older rufus, or unetbooting/win32diskimager. [source](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Community-Edition-Getting-Started-v2_1:top-installing-ce-t.html)
-- Make sure to disable Secure boot, and actually use the old legacy boot this time, works better for Nutanix.
+- Think this will be easy? Well, it is—if you read the docs! #rtfm, am I right?
+- There is currently a bug in Rufus versions above 3.21, so use an older version, or use Unetbootin or Win32DiskImager. [source](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Community-Edition-Getting-Started-v2_1:top-installing-ce-t.html)
+- Make sure to disable Secure Boot, use legacy boot mode this time; it works better for Nutanix.
 
 # Installing AHV
 - Here comes the fun part, waiting... tududud
