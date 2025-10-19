@@ -116,7 +116,7 @@ There are two ways to deploy. We'll try the first one, the easiest one. If that 
 
 First things first, head over to the dashboard and find the “Register or Create New” button. No, it’s not a trap. Click it, then hit “Deploy.” Easy, right? Almost too easy, but hey, we take what we can get.
 
-![Alt text](prism_dashboard.png)
+![Alt text](assets/prism_dashboard.png)
 
 Next, select the latest version available. Not necessarily the first one you see—this isn’t a game of shelf organization. Google which one that is or just pick the newest-looking. If you’re feeling adventurous, you can start moonlighting as a detective.
 
@@ -155,19 +155,6 @@ Finally, go back to the GUI, head to the Prism Central upgrade section, and mira
 So yeah, this “hard way” isn’t exactly fun, isn’t beginner-friendly, and definitely doesn’t come with a neat button that says “Make it so.” But hey, it builds character. Or wrinkles. One of those.
 
 Good luck. You’re gonna need it.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
