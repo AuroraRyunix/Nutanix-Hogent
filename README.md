@@ -38,14 +38,20 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 - STILL DO NOT CLICK NEXT. 
 - have your config double checked by the person responsible, the supervisor. Not to be confused with hypervisor. ^_^
 - Hit install, and go take a 1 hour break, yeah that's how long it takes, maybe even more.
-- Notice: if you have a boot ssd, it can go a lot faster, i've tested most stuff on an kioxia CM6, which took about 25 min for the full install.
-- After around 20-30 min you'll see "INFO Hypervisor Installation in progress". That's the CVM being deployed
-
+- 
 ![Alt text](assets/hinstall.png)
 - Oh yay it's done! I hope it worked as well as it did for me, if not, uuuhm. Yikes, call support.
 
 ![Alt text](assets/hinstallcomp.png)
 - Notice: But won't hdds be slow? Yes, BUT, nutanix CE uses the spare CVM space for caching, and that works wonders for what we're doing (:
+- Notice: if you have a boot ssd, it can go a lot faster, i've tested most stuff on an kioxia CM6, which took about 25 min for the full install.
+- After around 20-30 min you'll see "INFO Hypervisor Installation in progress". That's the CVM being deployed
+
+## Starting the cluster.
+- ssh into AHV (10.10.0.12 for me), use the root user. change the password of root, nutanix, and admin. The nutanix user will eventually be deprecated.
+- do the same for CVM (10.10.0.13). Make sure to remember them, they can be the same.
+- DO THIS BEFORE PROCEEDING, MODIFYING THE PASSWORDS AFTERWARDS REQUIRE A MORE COMPLEX APPROACH AS THEY ARE LINKED IN DATABASES ELSEWHERE
+- YOU HAVE BEEN WARNED
 
 # And when you're finished?
 question yourself are you truly finished? Because i see a lot of big errors in our nutanix environement, let's fix those!
