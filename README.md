@@ -63,9 +63,23 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 - This basically means it's waiting for all the newly set up services to start, so sit back and enjoy some more coffee, or tea (you know who you are!)
 - This can take another few minutes, took mine about 15 of them! But do not worry, we're almost there!
 
+![Alt text](assets/zeusfinished.png)
+- And we're done!
+- Set a timer for 5 min, this makes sure all services are fully up and running, feel free to read a bit ahead, work on the documentation, or google a bit about how Nutanix and HCI work (:
+- New Archievement: Full Nutanix CE install, or are we there?
 
 
+# Nutanix WebUI
 
+## Where?
+- simple: https://CVM-IP:9440
+- log in with your set admin user and password.
+- First time you do this, it'll ask you link your next account, this is the Nutanix account you created earlier.
+
+![Alt text](assets/nextcreds.png)
+- After this you arrive at the dasboard, yay!
+
+![Alt text](assets/dashboard.png)
 
 # And when you're finished?
 question yourself are you truly finished? Because i see a lot of big errors in our nutanix environement, let's fix those!
