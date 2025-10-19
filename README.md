@@ -57,6 +57,14 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 - Doing so should give a line about Cluster:XXXX Will seed prism with password hash....
 
 ![Alt text](assets/clustercreate.png)
+- This took about 100 sec~ on my NVMe system. Shouldn't take much longer, after a while you'll get a list like this:
+
+![Alt text](assets/zeusstart.png)
+- This basically means it's waiting for all the newly set up services to start, so sit back and enjoy some more coffee, or tea (you know who you are!)
+- This can take another few minutes, took mine about 15 of them! But do not worry, we're almost there!
+
+
+
 
 
 # And when you're finished?
