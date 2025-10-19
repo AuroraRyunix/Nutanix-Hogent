@@ -127,3 +127,4 @@ And that, my friends, is where our journeys pause for a moment to reflect on wha
 And that, my friends, is where our journeys part.
 
 Now get out there and break something. Then fix it. That's how we learn. It's also how we justify our existence.
+-Aurora R.
