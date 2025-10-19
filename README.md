@@ -34,11 +34,11 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 - DO NOT CLICK NEXT (lol)
 - Double check everything, assign 2 ips that'll be accesible on vlan0 (untagged); one for the CVM and one for AHV.
 - Personally i always use 10.10.0.1/24 (yes CIDR my beloved, google that if you don't know what it is!)
-- So i set AHV to 10.10.0.12, and CVM to 10.10.0.13, PC will later be set to 10.10.0.14. (I'm afraid of the number 13)
+- So i set AHV to 10.10.0.4, and CVM to 10.10.0.5, PC will later be set to 10.10.0.8.
 - STILL DO NOT CLICK NEXT. 
 - have your config double checked by the person responsible, the supervisor. Not to be confused with hypervisor. ^_^
 - Hit install, and go take a 1 hour break, yeah that's how long it takes, maybe even more.
-- 
+
 ![Alt text](assets/hinstall.png)
 - Oh yay it's done! I hope it worked as well as it did for me, if not, uuuhm. Yikes, call support.
 
@@ -48,11 +48,16 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 - After around 20-30 min you'll see "INFO Hypervisor Installation in progress". That's the CVM being deployed
 
 ## Starting the cluster.
-- ssh into AHV (10.10.0.12 for me), use the root user. change the password of root, nutanix, and admin. The nutanix user will eventually be deprecated.
-- do the same for CVM (10.10.0.13). Make sure to remember them, they can be the same.
+- ssh into AHV (10.10.0.4 for me), use the root user. change the password of root, nutanix, and admin. The nutanix user will eventually be deprecated.
+- do the same for CVM (10.10.0.5). Make sure to remember them, they can be the same.
 - DO THIS BEFORE PROCEEDING, MODIFYING THE PASSWORDS AFTERWARDS REQUIRE A MORE COMPLEX APPROACH AS THEY ARE LINKED IN DATABASES ELSEWHERE
 - YOU HAVE BEEN WARNED
-- 
+- exit the CVM, and ssh into it again, with the admin user.
+- run the magic command: cluster -s CVM_IP --redundancy_factor=2 create (where CVM_IP is.... The bloody ip of your one cvm! So in my case 10.10.0.5)
+- Doing so should give a line about Cluster:XXXX Will seed prism with password hash....
+
+![Alt text](assets/clustercreate.png)
+
 
 # And when you're finished?
 question yourself are you truly finished? Because i see a lot of big errors in our nutanix environement, let's fix those!
