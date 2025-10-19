@@ -39,8 +39,10 @@ Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation a
 - have your config double checked by the person responsible, the supervisor. Not to be confused with hypervisor. ^_^
 - Hit install, and go take a 1 hour break, yeah that's how long it takes, maybe even more.
 - After around 20-30 min you'll see "INFO Hypervisor Installation in progress". That's the CVM being deployed
+
 ![Alt text](assets/hinstall.png)
 - Oh yay it's done! I hope it worked as well as it did for me, if not? Get good lol.
+
 ![Alt text](assets/hinstallcomp.png)
 - Notice: But won't hdds be slow? Yes, BUT, nutanix CE uses the spare CVM space for caching, and that works wonders for what we're doing (:
 
