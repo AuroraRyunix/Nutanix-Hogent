@@ -1,6 +1,5 @@
 # Nutanix-Hogent
-Introducing mayor whack + absolute shenanigans, with a tiny bit of hope~~
-Human readable format: Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation and overlay networking using the Network Controller.
+Full Nutanix stack, AHV+CVM+PC. Optional extra tasks like network segmentation and overlay networking using the Network Controller.
 (Those that know me well enough know i shove some NSX overlay networking in everything)
 
 ## Notice
