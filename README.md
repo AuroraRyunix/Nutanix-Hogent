@@ -39,6 +39,8 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 - I stick with 10.10.0.1/24. It’s called CIDR notation. Look it up. That’s what search engines are for.
 - So I set AHV to 10.10.0.4, and CVM to 10.10.0.5. PC will later be set to 10.10.0.8. Simple, right? Right.
 - STILL DO NOT CLICK NEXT
+
+![Alt text](assets/ahvsetup.png)
 - Get your config reviewed by the person who’s actually in charge. Not the hypervisor—that joke stopped being funny after VMware 5.5. Get it approved. Cover yourself. Paperwork won’t save the world, but it’ll save your job.
 - Hit install and walk away. An hour, maybe longer. Go admire some grass. Read something that isn’t a log file. Contemplate how your life led to watching progress bars for a living.
 
