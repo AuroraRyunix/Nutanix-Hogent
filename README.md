@@ -7,7 +7,7 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 - Everybody lies. Especially error messages. Keep that in mind.
 - 
 ## Deployment War Stories
-- **17 full runs** of this circus—because who doesn’t love déjà vu?  
+- **17 full runs** of this circus, because who doesn’t love déjà vu?  
 - Total time invested: roughly 68 hours of staring at progress bars, 118 cups of coffee, and enough existential dread to power a small moon.  
 - Moral of the story: repetition is the mother of competence, or insanity. You decide.
 
