@@ -66,7 +66,6 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 - DO THIS BEFORE PROCEEDING. CHANGING PASSWORDS AFTER CLUSTER CREATION REQUIRES A MORE COMPLEX APPROACH BECAUSE THEY'RE HARDCODED IN DATABASES SCATTERED ACROSS THE INFRASTRUCTURE LIKE EASTER EGGS NOBODY WANTED.
 - YOU HAVE BEEN WARNED. Don't come crying later. I told you. Right here. In caps. With emphasis. Reading is fundamental.
 - Run the magic incantation: `cluster -s CVM_IP --redundancy_factor=2 create` (where CVM_IP is your CVM's IP. Mine's 10.10.0.5. Yours isn't. Use yours. Pattern recognition isn't rocket science.)
-- Run the magic command: `cluster -s CVM_IP --redundancy_factor=2 create` (where CVM_IP is the IP of your CVM. In my case, 10.10.0.5. Don't overthink it. Overthinking is the enemy of progress.)
 - You should see a line about "Cluster:XXXX Will seed prism with password hash...." If you do, congratulations—you followed instructions. If not, that's what search engines were invented for. Use them. They won't judge you. I will.
 
 ![Alt text](assets/clustercreate.png)
