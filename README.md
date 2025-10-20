@@ -5,7 +5,13 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 ## Notice
 - I will use the terms AHV, CVM, and PC during this guide. You should already know the first two. If you don't, we need to have a talk. PC refers to Prism Central.
 - Everybody lies. Especially error messages. Keep that in mind.
+- 
+## Deployment War Stories
+- **17 full runs** of this circus—because who doesn’t love déjà vu?  
+- Total time invested: roughly 68 hours of staring at progress bars, 118 cups of coffee, and enough existential dread to power a small moon.  
+- Moral of the story: repetition is the mother of competence, or insanity. You decide.
 
+![Alt text](assets/pain.png)
 ## What do you need?
 - Courage
 - No fear (they're different, trust me)
