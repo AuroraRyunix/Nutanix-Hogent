@@ -36,11 +36,11 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 - Use any other HDDs for data (D)
 - DO NOT CLICK NEXT (I know you want to. The urge is strong. Resist. Be better.)
 - Double check everything. Assign two IP addresses accessible on VLAN0 (untagged): one for the CVM and one for AHV.
-- I always use 10.10.0.1/24. CIDR notation. Look it up if you're not familiar. Google is your friend. Use it.
+- I stick with 10.10.0.1/24. It’s called CIDR notation. Look it up. That’s what search engines are for.
 - So I set AHV to 10.10.0.4, and CVM to 10.10.0.5. PC will later be set to 10.10.0.8. Simple, right? Right.
 - STILL DO NOT CLICK NEXT
-- Have your config double checked by the responsible person (the supervisor, not to be confused with hypervisor). Get it approved. Cover your bases. Documentation saves lives. Or at least jobs.
-- Hit install, and go take a one hour break. Yeah, that's how long it takes. Maybe even more. Go touch grass or something. Read a book. Question your life choices.
+- Get your config reviewed by the person who’s actually in charge. Not the hypervisor—that joke stopped being funny after VMware 5.5. Get it approved. Cover yourself. Paperwork won’t save the world, but it’ll save your job.
+- Hit install and walk away. An hour, maybe longer. Go admire some grass. Read something that isn’t a log file. Contemplate how your life led to watching progress bars for a living.
 
 ![Alt text](assets/hinstall.png)
 
@@ -53,17 +53,17 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 - After around 20-30 minutes, you'll see "INFO Hypervisor Installation in progress." That's the CVM being deployed. Relax. It knows what it's doing. Unlike most people.
 
 ## Starting the cluster
-- SSH into AHV (10.10.0.4 for me) using the root user. Change the passwords for root, nutanix, and admin. The nutanix user will eventually be deprecated. Plan accordingly.
-- Do the same on the CVM (10.10.0.5). Make sure to remember your passwords. They can be the same. Or not. I'm not your mom.
-- DO THIS BEFORE PROCEEDING. MODIFYING THE PASSWORDS AFTERWARDS REQUIRES A MORE COMPLEX APPROACH AS THEY ARE LINKED IN DATABASES ELSEWHERE.
-- YOU HAVE BEEN WARNED. Don't say I didn't tell you. I did. Right here. In caps. Can't miss it.
-- Exit the CVM, and SSH into it again using the admin user.
+- SSH into AHV (10.10.0.4 for me) using the root user. Change the passwords for root, nutanix, and admin. The nutanix user will eventually be deprecated. Plan accordingly. Evolution doesn't care about your nostalgia.
+- Do the same on the CVM (10.10.0.5). Make sure to remember your passwords. Use different ones if you're feeling paranoid. I'm not here to judge your security theater.
+- DO THIS BEFORE PROCEEDING. CHANGING PASSWORDS AFTER CLUSTER CREATION REQUIRES A MORE COMPLEX APPROACH BECAUSE THEY'RE HARDCODED IN DATABASES SCATTERED ACROSS THE INFRASTRUCTURE LIKE EASTER EGGS NOBODY WANTED.
+- YOU HAVE BEEN WARNED. Don't come crying later. I told you. Right here. In caps. With emphasis. Reading is fundamental.
+- Run the magic incantation: `cluster -s CVM_IP --redundancy_factor=2 create` (where CVM_IP is your CVM's IP. Mine's 10.10.0.5. Yours isn't. Use yours. Pattern recognition isn't rocket science.)
 - Run the magic command: `cluster -s CVM_IP --redundancy_factor=2 create` (where CVM_IP is the IP of your CVM. In my case, 10.10.0.5. Don't overthink it. Overthinking is the enemy of progress.)
-- Doing so should give you a line about "Cluster:XXXX Will seed prism with password hash...." If it does, you're golden. If not, well, that's why Google exists.
+- You should see a line about "Cluster:XXXX Will seed prism with password hash...." If you do, congratulations—you followed instructions. If not, that's what search engines were invented for. Use them. They won't judge you. I will.
 
 ![Alt text](assets/clustercreate.png)
 
-- This took about 100 seconds on my NVMe system. Shouldn't take much longer. After a while, you'll get a list like this:
+- This took about 1 seconds on my NVMe rig. If yours is slower, you’re either on a potato or you like watching paint dry. After a bit, you’ll see something like this:
 
 ![Alt text](assets/zeusstart.png)
 
@@ -72,9 +72,9 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 
 ![Alt text](assets/zeusfinished.png)
 
-- And we're done! Or are we? (Spoiler: we're never done.)
-- Set a timer for 5 minutes. This makes sure all services are fully up and running. Feel free to read ahead, work on the documentation, or Google how Nutanix and HCI work. Knowledge is power. Power is good. Be powerful.
-- New Achievement Unlocked: Full Nutanix CE install. Or are we there yet? The answer is always no.
+- And voilà. Done. Or not. (Hint: you’re never actually done.)
+- Set a five-minute timer. That’s your “all-systems-go” assurance. Use it to update docs, Google how Nutanix and HCI work, or ponder life’s great mysteries. Knowledge is power. Power is good. Be powerful.
+- New Achievement Unlocked: Full Nutanix CE install. Progress? Sort of. Endgame? Never.
 
 # Nutanix WebUI
 
@@ -120,9 +120,9 @@ First things first, head over to the dashboard and find the “Register or Creat
 
 Next, select the latest version available. Not necessarily the first one you see—this isn’t a game of shelf organization. Google which one that is or just pick the newest-looking. If you’re feeling adventurous, you can start moonlighting as a detective.
 
-Go for the smallest deployment option unless you have more than 500 hosts waiting in line. You don’t, and if you do, I’m impressed; or sorry, depending on how well it’s working.
+Choose the smallest footprint unless you’ve got 500+ hosts queued. You don’t. Stop flexing.
 
-Assign that sucker a free IP address. Don’t pick the one your neighbor’s printer uses. Fill in a working NTP server — if you have an Active Directory running, use that. Time is everything, and trust me, these machines care.
+Assign that sucker a free IP address. Don’t pick the one your neighbor’s printer uses. Fill in a working NTP server, preferably AD if it’s not a museum relic.
 
 Give it a working DNS server, too. Yes, like real DNS, not the “sometimes works” version. Nobody's holding your hand here; figure that out yourself. Welcome to IT.
 
