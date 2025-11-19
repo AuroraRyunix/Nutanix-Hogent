@@ -65,6 +65,7 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 - Do the same on the CVM (10.10.0.5). Make sure to remember your passwords. Use different ones if you're feeling paranoid. I'm not here to judge your security theater.
 - DO THIS BEFORE PROCEEDING. CHANGING PASSWORDS AFTER CLUSTER CREATION REQUIRES A MORE COMPLEX APPROACH BECAUSE THEY'RE HARDCODED IN DATABASES SCATTERED ACROSS THE INFRASTRUCTURE LIKE EASTER EGGS NOBODY WANTED.
 - YOU HAVE BEEN WARNED. Don't come crying later. I told you. Right here. In caps. With emphasis. Reading is fundamental.
+- So, you’ve just spent half an hour trying to change the passwords. Great news: you’re now officially slower than the cluster. Congratulations. If you somehow did it faster, run 'genesis status' and make sure at least Foundation is actually running. Don’t trust optimism.
 - Run the magic incantation: `cluster -s CVM_IP --redundancy_factor=2 create` (where CVM_IP is your CVM's IP. Mine's 10.10.0.5. Yours isn't. Use yours. Pattern recognition isn't rocket science.)
 - You should see a line about "Cluster:XXXX Will seed prism with password hash...." If you do, congratulations—you followed instructions. If not, that's what search engines were invented for. Use them. They won't judge you. I will.
 
