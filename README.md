@@ -17,7 +17,7 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 - No fear (they're different, trust me)
 - Any Dell or HPE server with Xeon E5 v3s or v4s (preferably one that actually boots)
 - Nutanix CE account and ISOs (more on this later, patience)
-- One SSD (>128GB) for AHV
+- One SSD (>128GB) for AHV (Can be an HDD)
 - One SSD (>512GB) for CVM+PC
 - Common sense (optional, but highly recommended. Surprisingly rare.)
 
