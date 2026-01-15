@@ -67,17 +67,18 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 - DO THIS BEFORE PROCEEDING. CHANGING PASSWORDS AFTER CLUSTER CREATION REQUIRES A MORE COMPLEX APPROACH BECAUSE THEY'RE HARDCODED IN DATABASES SCATTERED ACROSS THE INFRASTRUCTURE LIKE EASTER EGGS NOBODY WANTED.
 - YOU HAVE BEEN WARNED. Don't come crying later. I told you. Right here. In caps. With emphasis. Reading is fundamental.
 - So, you’ve just spent half an hour trying to change the passwords. Great news: you’re now officially slower than the cluster. Congratulations. If you somehow did it faster, run 'genesis status' and make sure at least Foundation is actually running. Don’t trust optimism.
-- Run the magic incantation: `cluster -s CVM_IP --redundancy_factor=1 create` (where CVM_IP is your CVM's IP. Mine's 10.10.0.5. Yours isn't. Use yours. Pattern recognition isn't rocket science.)
+- Run the magic incantation: `cluster -s CVM_IP --redundancy_factor=1 create` In an production setup you would not be using FTT 1! (where CVM_IP is your CVM's IP. Mine's 10.10.0.5. Yours isn't. Use yours. Pattern recognition isn't rocket science.)
 - You should see a line about "Cluster:XXXX Will seed prism with password hash...." If you do, congratulations—you followed instructions. If not, that's what search engines were invented for. Use them. They won't judge you. I will.
+- This is the perfect moment to go goolge what FTT means....
 
 ![Alt text](assets/clustercreate.png)
 
-- This took about 1 seconds on my NVMe rig. If yours is slower, you’re either on a potato or you like watching paint dry. After a bit, you’ll see something like this:
+- This took about 5 seconds on my kioxia memebox. If yours is slower, you’re either on a potato or you like watching paint dry. After a bit, you’ll see something like this:
 
 ![Alt text](assets/zeusstart.png)
 
 - This basically means it's waiting for all the newly set up services to start. Sit back and enjoy some more coffee. Or tea. (You know who you are. Yes, you.)
-- This can take another few minutes. Mine took about 15. But do not worry. We're almost there. Deep breaths. In through the nose, out through the mouth.
+- This can take another few minutes. Mine took about 5. But do not worry. We're almost there. Deep breaths. In through the nose, out through the mouth.
 
 ![Alt text](assets/zeusfinished.png)
 
