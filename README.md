@@ -62,8 +62,8 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 - After around 20-30 minutes, you'll see "INFO Hypervisor Installation in progress." That's the CVM being deployed. Relax. It knows what it's doing. Unlike most people.
 
 ## Starting the cluster
-- SSH into AHV (10.10.0.4 for me) using the admin user. Change the passwords for root, nutanix, and admin. The nutanix user will eventually be deprecated. Plan accordingly. Evolution doesn't care about your nostalgia.
-- Do the same on the CVM (10.10.0.5). Make sure to remember your passwords. Use different ones if you're feeling paranoid. I'm not here to judge your security theater.
+- SSH into AHV (10.10.0.4 for me) using the admin user. Change the passwords for nutanix and admin. The nutanix user will eventually be deprecated. Plan accordingly. Evolution doesn't care about your nostalgia.
+- Do the same on the CVM (10.10.0.5). Actually, don't, just change the nutanix user password, or actually don't, just don't touch it at all yet. Make sure to remember your passwords. Use different ones if you're feeling paranoid. I'm not here to judge your security theater.
 - DO THIS BEFORE PROCEEDING. CHANGING PASSWORDS AFTER CLUSTER CREATION REQUIRES A MORE COMPLEX APPROACH BECAUSE THEY'RE HARDCODED IN DATABASES SCATTERED ACROSS THE INFRASTRUCTURE LIKE EASTER EGGS NOBODY WANTED.
 - YOU HAVE BEEN WARNED. Don't come crying later. I told you. Right here. In caps. With emphasis. Reading is fundamental.
 - So, you’ve just spent half an hour trying to change the passwords. Great news: you’re now officially slower than the cluster. Congratulations. If you somehow did it faster, run 'genesis status' and make sure at least Foundation is actually running. Don’t trust optimism.
