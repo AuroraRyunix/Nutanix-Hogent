@@ -99,10 +99,10 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 
 - After this, you arrive at the dashboard. Yay! Confetti! Jazz hands! Look at you, all grown up and deploying infrastructure.
 - I always get the "Cluster Service ['acropolis', 'uhura'] Restarting Frequently" warning. Ignore it. It goes away. It's a side effect from the older version we use. Annoying, but harmless. Like that coworker who microwaves fish in the break room.
-- Notice how i have 800gb ram, you do not ^_^.
 
 ![Alt text](assets/dashboard.png)
 
+- Notice how i have 800gb ram, you do not ^_^.
 - Something you'll notice: critical alerts about disks not being supported. We'll address this later. For now, ignore it. Pretend it's not there. Ignorance is bliss. Bliss is underrated.
 
 ## LCM and Updates
