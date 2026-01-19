@@ -117,7 +117,7 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 # Deploying Prism Central
 "Prism Central provides a workspace to monitor and manage multiple clusters from a centralized environment. It runs as a separate instance that consists of either a single VM or as a three-VM scale-out architecture."
 
-Translation: It's a manager for multiple Nutanix clusters, with some added tools and tricks. Any big scale deployment will use Prism Central, not the built-in mini version. Think of it as the difference between a toy car and a Ferrari. Or between aspirin and Vicodin.
+Translation: It's a manager for multiple Nutanix clusters, with some added tools and tricks. Any big scale deployment will use Prism Central, not the built-in mini version. Think of it as the difference between a toy car and a Ferrari. Or between Aspirin and Vicodin.
 
 There are two ways to deploy. We'll try the first one, the easiest one. If that doesn't work, we'll try the manual way. Do not fear. Documentation is here. Somewhere. Probably buried under seventeen tabs you forgot to close.
 
