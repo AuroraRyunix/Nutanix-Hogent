@@ -83,7 +83,7 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 ![Alt text](assets/zeusfinished.png)
 
 - And voilà. Done. Or not. (Hint: you’re never actually done.)
-- Set a five-minute timer. That’s your “all-systems-go” assurance. Use it to update docs, Google how Nutanix and HCI work, or ponder life’s great mysteries. Knowledge is power. Power is good. Be powerful.
+- Set a ten-minute timer. That’s your “all-systems-go” assurance. Use it to update docs, Google how Nutanix and HCI work, or ponder life’s great mysteries. Knowledge is power. Power is good. Be powerful.
 - New Achievement Unlocked: Full Nutanix CE install. Progress? Sort of. Endgame? Never.
 
 # Nutanix WebUI
