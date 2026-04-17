@@ -59,10 +59,11 @@ Full Nutanix stack: AHV+CVM+PC. Optional extra tasks like network segmentation a
 
 - Notice: But won't HDDs be slow? Yes. Shockingly slow. Like watching paint dry. But Nutanix CE uses spare CVM space for caching, which works wonders for what we're doing. Almost as fast as me getting more coffee. Almost.
 - Notice: If you have a boot SSD, it goes much faster. I've tested most things on a Kioxia CM6, which took about 25 minutes for the full install. Your mileage may vary. Probably will.
-- After around 20-30 minutes, you'll see "INFO Hypervisor Installation in progress." That's the CVM being deployed. Relax. It knows what it's doing. Unlike most people.
+- After around 20-30 minutes, you'll see "INFO Hypervisor Installation in progress." That's AHV being installed. Relax. It knows what it's doing. Unlike most people.
+- Well... about that... if you weren’t too busy trusting what you think is happening and actually SSH’d into it, you’d see QEMU running, which raises the obvious question of why, and the answer seems to be that they virtualize the installation with disk passthrough... because of course they do.
 
 ## Starting the cluster
-- SSH into AHV (10.10.0.4 for me) using the admin user. Change the passwords for nutanix and admin. The nutanix user will eventually be deprecated. Plan accordingly. Evolution doesn't care about your nostalgia.
+- SSH into AHV (10.10.0.4 for me) using the root user. Change the passwords for nutanix, root, admin. The nutanix user will eventually be deprecated. Plan accordingly. Evolution doesn't care about your nostalgia.
 - Do the same on the CVM (10.10.0.5). Actually, don't, just change the nutanix user password, or actually don't, just don't touch it at all yet. Make sure to remember your passwords. Use different ones if you're feeling paranoid. I'm not here to judge your security theater.
 - DO THIS BEFORE PROCEEDING. CHANGING PASSWORDS AFTER CLUSTER CREATION REQUIRES A MORE COMPLEX APPROACH BECAUSE THEY'RE HARDCODED IN DATABASES SCATTERED ACROSS THE INFRASTRUCTURE LIKE EASTER EGGS NOBODY WANTED.
 - YOU HAVE BEEN WARNED. Don't come crying later. I told you. Right here. In caps. With emphasis. Reading is fundamental.
